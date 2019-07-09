@@ -7,3 +7,10 @@ Letter input: o
 Result: 4
 
 '''
+
+sentence = input("Please enter a sentence: ")
+letter = input("Please enter a letter: ")
+
+result = sentence.count(letter)
+
+print(f"The letter {letter} appears {result} times.")

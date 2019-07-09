@@ -7,3 +7,24 @@ Example input: 1,2,3,4,5,6,7,8,9,10
 Example output: 2,4,6,8,10,9,7,5,3,1
 
 '''
+#get the input, convert into a list of numbers, print to check
+listinput = input('Please provide 10 numbers, separated by a space: ')
+nlist = listinput.split()
+nlist = [int(num) for num in nlist]
+print(nlist)
+
+#stuck
+i = 1
+up = True
+
+if i <= 10:
+    for num in nlist:
+        print(nlist[num])
+        i += 2
+
+elif i >= 10:
+    for num in nlist:
+        print(nlist[num])
+        i -= 2
+
+
