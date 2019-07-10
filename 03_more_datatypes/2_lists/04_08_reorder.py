@@ -13,18 +13,7 @@ nlist = listinput.split()
 nlist = [int(num) for num in nlist]
 print(nlist)
 
-#stuck
-i = 1
-up = True
 
-if i <= 10:
-    for num in nlist:
-        print(nlist[num])
-        i += 2
+sort_list = nlist[1::2] + nlist[8::-2]
 
-elif i >= 10:
-    for num in nlist:
-        print(nlist[num])
-        i -= 2
-
-
+print(sort_list)
