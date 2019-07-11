@@ -11,9 +11,9 @@ userput = input("Please input string: ")
 
 slist = userput.split()
 
-for word in slist:
-    word = ()
-    for letter in word:
-        word.append(word[letter])
+newlist = []
 
-print(slist)
+for i in slist:
+    newlist.append(tuple(list(i)))
+
+print(newlist)

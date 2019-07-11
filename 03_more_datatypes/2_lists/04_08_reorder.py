@@ -17,3 +17,21 @@ print(nlist)
 sort_list = nlist[1::2] + nlist[8::-2]
 
 print(sort_list)
+
+
+#felt that the above code didn't go into it enough? Alternative solution = (Which also works regardless of length)
+
+newlist = []
+newlist2 = []
+
+for i in nlist:
+    if i % 2 == 0:
+        newlist.append(i)
+
+for i in nlist:
+    if i % 2 != 0:
+        newlist2.append(i)
+
+newlist2.reverse()
+
+print(newlist + newlist2)
