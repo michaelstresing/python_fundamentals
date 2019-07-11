@@ -6,3 +6,14 @@ input = "hello world"
 result_list = [('h', 'e', 'l', 'l', 'o'), ('w', 'o', 'r', 'l', 'd')]
 
 '''
+
+userput = input("Please input string: ")
+
+slist = userput.split()
+
+for word in slist:
+    word = ()
+    for letter in word:
+        word.append(word[letter])
+
+print(slist)
