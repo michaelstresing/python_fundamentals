@@ -18,3 +18,27 @@ Cars, animals, poker games, sports teams, trees, beers, people etc...
 
 
 '''
+
+
+class Footballer(object):
+
+    def __init__(self, name, team, number):
+        self.name = name
+        self.team = team
+        self.number = number
+
+
+class FootballClub(object):
+
+    def __init__(self, name, city, ucltrophies):
+        self.name = name
+        self.city = city
+        self.ucltrophies = ucltrophies
+
+
+class UCLWinners(object):
+
+    def __init__(self, team, year, motm):
+        self.team = team
+        self.year = year
+        self.motm = motm
