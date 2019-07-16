@@ -6,15 +6,18 @@ result_list = [("item3", 1), ("item1", 5), ("item2", 6)]
 
 '''
 input_dict = {"item1": 5, "item2": 6, "item3": 1}
+result_list = []
 
-resulta = input_dict.items()
-print(resulta)
+for key, value in input_dict.items():
+    result_list.append((key, value))
 
-resultb = []
 
-for item in resulta:
-    resultb.append(item)
+def sort(item):
+    return (item[1])
 
-print(resultb)
+list2 = sorted(result_list, key= sort)
 
-#Surely there's a more sophisticated solution to this....
+print(list2)
+
+
+#oddly... << list2 = result_list.sort(result_list, key= sort) >> didn't work. I was under the impression that sorted() and .sort were the same?

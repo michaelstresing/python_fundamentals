@@ -14,7 +14,7 @@ nlist = [int(num) for num in nlist]
 print(nlist)
 
 
-sort_list = nlist[1::2] + nlist[8::-2]
+sort_list = nlist[1::2] + nlist[len(nlist)-1::-2]
 
 print(sort_list)
 
