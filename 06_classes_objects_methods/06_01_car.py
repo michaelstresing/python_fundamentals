@@ -26,7 +26,7 @@ class Car(object):
 
 
     def info(self):
-        return "You've got a {self.model} from {self.year} going {self.speed}"
+        return f"You've got a {self.model} from {self.year} going {self.speed}"
 
 toy = Car("Toyota", 1994)
 fer = Car("Ferrari", 2018)

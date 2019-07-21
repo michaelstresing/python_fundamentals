@@ -16,29 +16,75 @@ Be creative. Have some fun. :)
 Using objects you can model anything you want.
 Cars, animals, poker games, sports teams, trees, beers, people etc...
 
-
 '''
 
 
-class Footballer(object):
+class Footballer:
 
-    def __init__(self, name, team, number):
+    def __init__(self, name='name', teams='team', number='0'):
         self.name = name
-        self.team = team
+        self.teams = teams
         self.number = number
 
+    def __str__(self):
+        return f"The footballer, {self.name}, wears {self.number} playing for {self.teams}."
 
-class FootballClub(object):
+    def printme(self):
+        return f"The footballer, {self.name}, wears {self.number} playing for {self.teams}."
 
-    def __init__(self, name, city, ucltrophies):
+
+class FootballClub:
+
+    def __init__(self, name='name', city='city', ucltrophies='0'):
         self.name = name
         self.city = city
         self.ucltrophies = ucltrophies
 
+    def __str__(self):
+        return f"The team, {self.name}, based in {self.city} has won the Champions League {self.ucltrophies} time(s)."
 
-class UCLWinners(object):
+    def printme(self):
+        return f"The team, {self.name}, based in {self.city} has won the Champions League {self.ucltrophies} time(s)."
 
-    def __init__(self, team, year, motm):
+    def winatrophy(self):
+        self.ucltrophies += 1
+        print(f"{self.name} won! They now have {self.ucltrophies} trophies!")
+
+    def __add__(self, otherclub):
+        return FootballClub(self.ucltrophies + otherclub.ucltrophies)
+
+
+class UCLWinners:
+
+    def __init__(self, team='team', year='0000', motm='name'):
         self.team = team
         self.year = year
         self.motm = motm
+
+    def __str__(self):
+        return f"{self.motm} was Man of the Match, when {self.team} won the Champions League in {self.year}."
+
+    def printme(self):
+        return f"{self.motm} was Man of the Match, when {self.team} won the Champions League in {self.year}."
+
+
+ronaldo = Footballer('Chistiano Ronaldo', 'Juventus', 7)
+messi = Footballer('Leo Messi', 'Barcelona', 10)
+
+barca = FootballClub('FC Barcelona', 'Barcelona', 5)
+juve = FootballClub('Juventus', 'Turin', 2)
+
+thisyear = UCLWinners('Liverppol FC', 2019, "Virgil van Dijk")
+twothousandtwelve = UCLWinners('Chelsea FC', 2012, "Didier Drogba")
+
+print(ronaldo)
+
+barca.winatrophy()
+
+print(barca)
+
+print(barca.ucltrophies + juve.ucltrophies)
+
+messi.teams = "Arsenal"
+
+print(messi)
