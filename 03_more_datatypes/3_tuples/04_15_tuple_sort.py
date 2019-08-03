@@ -51,5 +51,5 @@ for tuple in unsorted_list:
 for list1 in unsorted_list:
     sortedlist.sort(unsorted_list, key= key)
 
-print(sortedlist
+print(sortedlist)
 
