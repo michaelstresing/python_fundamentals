@@ -23,6 +23,7 @@ unsorted_list = [('first_element', 4), ('second_element', 2), ('third_element', 
 def key(item):
     return item[1]
 
+
 sorted_list = sorted(unsorted_list, key= key)
 
 print(sorted_list)
