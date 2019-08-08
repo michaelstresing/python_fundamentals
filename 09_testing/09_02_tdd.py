@@ -8,3 +8,33 @@ fail and write tests that will check and prevent failure.
 You do not need to implement the actual functions after writing the tests but you may.
 
 '''
+
+'''
+class TestsforCalculator
+
+    Test Addition
+        Edgecases: 
+        0
+        negative numbers
+        floats? 
+        
+    Test Subtraction
+        Edgecases: 
+        0
+        negative numbers
+        floats? 
+    
+    Test Division
+        Edgecases: 
+        0
+        negative numbers
+        floats? 
+    
+    Test Multiplication
+        Edgecases: 
+        0
+        negative numbers
+        floats? 
+
+
+'''
